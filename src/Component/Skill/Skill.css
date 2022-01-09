@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Roboto+Slab:wght@300;400;500;600;700;800&family=Roboto:wght@300;400;500;700;900&display=swap");
+
+/* 
+font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Roboto Slab', serif;
+
+*/
+
+.skill {
+  width: 100%;
+  height: fit-content;
+  position: relative;
+}
+
+.skill_container {
+  width: 75%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 20px 20px 20px;
+  border-radius: 12px;
+  background-color: #31225c;
+  /* background-color: #30336b; */
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.skill_container > div {
+  height: 160px;
+  display: grid;
+  place-items: center;
+  /* margin-top: -30px; */
+  padding: 5px;
+  transition: all 0.2s;
+  border-radius: 12px;
+}
+.skill_container > div:hover {
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  background-color: #fff;
+  color: #31225c;
+}
+.skill_container > div:hover h4 {
+  color: #31225c;
+  font-weight: 800;
+}
+
+.skill_container img {
+  width: 90px;
+  height: 90px;
+}
+.skill_container h4 {
+  font-family: "Roboto", sans-serif;
+  font-size: 32px;
+  font-weight: 600;
+  color: #fff;
+  text-transform: capitalize;
+}
+
+.skill_item {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.skill_item h4 {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+@media only screen and (max-width: 600px) {
+  .skill {
+    height: fit-content;
+    position: relative;
+  }
+  .skill_container {
+  }
+
+  .skill_title {
+    flex: 100%;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  .skill_item {
+    background-color: #fff;
+    margin-bottom: 20px;
+  }
+  .skill_item h4 {
+    color: #31225c;
+    font-weight: 800;
+  }
+}
+@media only screen and (min-width: 600px) {
+}
